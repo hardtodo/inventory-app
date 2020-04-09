@@ -1,6 +1,5 @@
-<p>
-  {{title+''}}
-</p>
-<student-list></student-list>
-<img [src]="imgUrl">
-<img src="{{imgUrl}}">
+<div class="d-flex justify-content-center">
+    <products-list [productsList]="products" 
+    (productSelected)="onProductSelected($event)">
+    </products-list>
+</div>
